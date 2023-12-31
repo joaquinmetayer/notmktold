@@ -1,0 +1,151 @@
+@font-face {
+  font-family: TR;
+  src: url("../font/PPTelegraf-Regular.otf");
+}
+@font-face {
+  font-family: TUB;
+  src: url("../font/PPTelegraf-UltraBold.otf");
+}
+@font-face {
+  font-family: TUL;
+  src: url("../font/PPTelegraf-UltraLight.otf");
+}
+
+/* COLORS 
+    BLUE   #281e43
+    PINK   #e52762
+    ORANGE #ed6e1d
+    YELLOW #facd07
+*/
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff50;
+  border-radius: 10px;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+body{
+  background-color: #000;
+}
+.pepe {
+  background-image: url(../img/pepephoto.gif);
+  background-position: center;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  filter: brightness(50%);
+}
+video{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -2;
+  object-fit: cover;
+}
+.video-bkg{
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.hola{
+  z-index: 3 !important;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  position: fixed;
+}
+.hola h1{
+  color: #fff;
+  font-family: tub;
+  font-size: 40px;
+}
+.hola p{
+  color: #fff;
+  font-family: TR;
+  font-size: 18.5px;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.hola img{
+  height: 50px;
+}
+.btn-not-mkt,
+.btn-not-code {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  height: 20vh;
+}
+.btn-not-mkt{
+  background-color: #271d42;
+}
+.btn-not-code{
+  background-color: #111111;
+}
+.mkt {
+  height: 85px;
+}
+.code {
+  height: 85px;
+}
+.agency {
+  height: 85px;
+}
+.btn-not-agency {
+  background-color: #ffffff;
+  width: 100%;
+  padding-bottom: 90px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  height: 35vh;
+}
+@media (min-width: 500px) {
+  .btn-not-agency, .btn-not-code, .btn-not-mkt{
+    justify-content: center;
+  }
+  .btn-not-code img{
+    padding-right: 60px;
+  }
+  .btn-not-agency img{
+    padding-right: 75px;
+  }
+}
+.click-aqui{
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: TUB;
+  color: #000000;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
